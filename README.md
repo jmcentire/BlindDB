@@ -31,3 +31,15 @@ This demo illustrates concepts from Chapters 3 and 5 of *The Ephemeral Internet*
 - **Blind Database** (Ch. 5) — Client-side encryption where the server is a pure key-value store with no knowledge of what keys mean or what values contain
 
 ISBN 979-8-9940343-8-5 | Cage & Mirror Publishing, 2026
+
+## Privacy Stack
+
+BlindDB is one layer of a larger privacy architecture. Each component addresses a different failure mode.
+
+| Component | What It Does | Link |
+|-----------|-------------|------|
+| **Signet** | Cryptographic vault. Three-tier data model, ZK proofs, Ed25519 root of trust. | [signet.tools](https://signet.tools) |
+| **Agent-Safe (SPL)** | Authorization policy in the token. Local eval in ~2 us. No policy server. | [jmcentire.github.io/agent-safe](https://jmcentire.github.io/agent-safe/) |
+| **Tessera** | Self-validating documents. Hash chain, Ed25519 signatures, embedded validators. | [jmcentire.github.io/tessera](https://jmcentire.github.io/tessera/) |
+| **BlindDB** | Storage the operator can't read. Client-side encryption, opaque record IDs. | *(this project)* |
+| **HermesP2P** | Ephemeral P2P messaging. No servers, no metadata, no persistence. | [hp2p.net](https://hp2p.net) |
