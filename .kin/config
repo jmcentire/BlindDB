@@ -1,0 +1,34 @@
+name: blinddb
+audience: public
+description: >
+  Interactive demonstration of client-side encryption architecture.
+  The server stores opaque encrypted blobs — it cannot read, search,
+  or analyze user data. Part of the privacy stack supporting
+  The Ephemeral Internet thesis.
+
+domains:
+  - privacy
+  - cryptography
+  - client-side-encryption
+  - demonstration
+
+voice:
+  tone: precise, privacy-first
+  principles:
+    - The server is structurally blind — not policy-blind, architecturally blind
+    - Encryption happens before data leaves the client
+    - Searchability without server-side decryption
+  anti-patterns:
+    - Server-side decryption for any reason
+    - Treating privacy as a policy toggle rather than structural guarantee
+
+standards:
+  code_review:
+    - No plaintext user data on the server side
+    - Crypto operations use audited libraries
+
+connects_to:
+  - signet
+  - tessera
+  - hermesp2p
+  - agent-safe
