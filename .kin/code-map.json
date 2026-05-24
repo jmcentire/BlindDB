@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "BlindDB",
+    "description": "Code map exported from Kindex for BlindDB.",
+    "languages": [],
+    "frameworks": [],
+    "analyzedAt": "2026-05-24T14:49:20",
+    "gitCommitHash": "b1d831cbb4bff309787aee0541a916b93a967505"
+  },
+  "nodes": [],
+  "edges": [],
+  "layers": [],
+  "tour": []
+}
